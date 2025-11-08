@@ -58,5 +58,19 @@
     server: {
       port: 3000,
       open: true,
+      proxy: {
+        '/query': {
+          target: 'http://localhost:7860',
+          changeOrigin: true,
+        },
+        '/tts': {
+          target: 'http://localhost:7860',
+          changeOrigin: true,
+        },
+        '/explain': {
+          target: 'http://localhost:7860',
+          changeOrigin: true,
+        },
+      },
     },
   });

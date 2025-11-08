@@ -26,6 +26,9 @@ import { TermsPage } from './components/TermsPage';
 import { PrivacyPage } from './components/PrivacyPage';
 import { ConsentPage } from './components/ConsentPage';
 
+// Voice Assistant
+import VoiceAssistant from './components/VoiceAssistant';
+
 function App() {
   return (
     <LanguageProvider>
@@ -61,6 +64,7 @@ function App() {
           </Routes>
 
           <Toaster position="top-center" style={{ zIndex: 9999 }} richColors />
+          <VoiceAssistant />
         </div>
       </Router>
     </LanguageProvider>

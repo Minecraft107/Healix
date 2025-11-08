@@ -1,1 +1,10 @@
 node_modules
+venv/
+*.pyc
+__pycache__/
+.env
+.DS_Store
+assistant_backend/ffmpeg-8.0/
+assistant_backend/ffmpeg-8.0.tar.xz
+assistant_backend/vosk-model-small-en-us-0.15.zip
+assistant_backend/tts_cache/
